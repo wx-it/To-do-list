@@ -82,8 +82,8 @@ h1 {
 }
 
 .output {
-  width: 100%;
-  padding: 1.25rem 7rem;
+  max-width: 100px;
+  padding: 1.25rem;
   height: 50px;
   background: #0436a3a9;
   border-radius: 10px 0px 0px 10px;
@@ -91,6 +91,7 @@ h1 {
   color: rgba(229, 229, 229, 1);
   box-shadow: 2px 4px 10px 5px rgba(0, 0, 0, 0.1);
 }
+
 
 .check-button {
   border: none;
