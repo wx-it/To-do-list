@@ -23,7 +23,8 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  width: 100vw;
 }
 
 .container input {
@@ -72,32 +73,42 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100vw;
   margin-top: 3rem;
+  border: 1px black solid;
 }
 
 .task-list-content {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 1rem 0;
 }
 
 .output {
-  max-width: 100px;
-  padding: 1.25rem;
-  height: 50px;
-  background: #0436a3a9;
+  display: inline-block;
+  max-width: 800px;
+  height: auto;
+  margin: auto;
+  background-color: #0436a3a9;
   border-radius: 10px 0px 0px 10px;
-  font-weight: 400;
   color: rgba(229, 229, 229, 1);
   box-shadow: 2px 4px 10px 5px rgba(0, 0, 0, 0.1);
 }
 
+.output p{
+  padding: 0 0.5rem;
+  font-weight: 400;
+  width: auto;
+  height: auto;
+  word-wrap: break-word;
+}
 
 .check-button {
   border: none;
   background-color: rgba(8, 10, 121, 0.377);
   padding: 0 1rem;
-  height: 50px;
+  height: auto;
   box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.1);
   color: white;
   font-size: 20px;
@@ -110,7 +121,7 @@ h1 {
   background-color: rgba(0, 0, 0, 0.377);
   color: white;
   padding: 0 1rem;
-  height: 50px;
+  height: 100%;
   font-size: 15px;
 }
 

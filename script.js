@@ -16,8 +16,12 @@ function createTask() {
   taskListContent.className="task-list-content";
 
   //paragraph element for the output
-  let p = document.createElement('p');
-  p.className="output";
+  let output = document.createElement('div');
+  output.className="output";
+
+  let p = document.createElement('p')
+  output.appendChild(p)
+
 
   //checked button
   let checkbtn = document.createElement('button');
@@ -32,7 +36,7 @@ function createTask() {
     //animation
     
     setTimeout(()=>{
-      taskListContent.appendChild(p);  
+      taskListContent.appendChild(output);  
       taskListContent.appendChild(checkbtn);
       taskListContent.appendChild(trashBtn);
       taskListContent.classList.add('popout')
